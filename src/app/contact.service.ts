@@ -8,7 +8,7 @@ import { Contact } from './model/contact.model';
 })
 export class ContactService {
 
-  private apiUrl = 'http://localhost:5000/api/contacts'; // .NET API
+  private apiUrl = 'https://localhost:7185/api/contacts'; // .NET API
 
   constructor(private http: HttpClient) {}
 
