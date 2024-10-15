@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Contact Management</h1>
+
+  <!-- Contact Form -->
+  <app-contact-form (formSubmit)="onFormSubmit($event)"></app-contact-form>
+
+  <!-- Contact List -->
+  <app-contact-list [contactDetailList]="contactList" (deleteContact)="onDeleteContact($event)"></app-contact-list>
+</div>
