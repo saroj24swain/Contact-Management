@@ -1,27 +1,50 @@
-# ContactManagementApp
+# Contact Management Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+This project is a full-stack application built using **Angular** (frontend) and **.NET Core** (backend) to manage contact information. It supports CRUD operations, validation, and basic error handling.
 
-## Development server
+## Project Structure
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Backend (API)**: Built with .NET Core 6.0
+- **Frontend (Angular)**: Built with Angular 13+ and Bootstrap for styling
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Prerequisites
 
-## Build
+Before running the application, ensure that you have the following installed:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Node.js** (v14+)
+- **Angular CLI** (v13+)
+- **.NET Core SDK** (6.0+)
+- **Visual Studio 2022** or **VS Code** (for running .NET Core)
+- **Git** (for cloning the repository)
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## How to Set Up and Run
 
-## Running end-to-end tests
+### Step 1: Clone the Repository
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Clone the repository to your local machine using Git:
 
-## Further help
+```bash
+git clone https://github.com/saroj24swain/Contact-Management.git 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Step 2: Publish and Run the .NET Core API
+Open the .NET Core API project located in the backend folder using Visual Studio or VS Code.
+
+Build the project to restore dependencies:
+
+dotnet build
+
+run the project 
+dotnet run
+
+The API will be hosted at https://localhost/7185
+
+swagger https://localhost:7185/api/contacts
+
+### Step 3: Serve the Angular Frontend
+
+npm install
+ng serve
