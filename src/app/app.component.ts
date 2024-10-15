@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { ContactService } from './contact.service';
 import { Contact } from './model/contact.model';
 
